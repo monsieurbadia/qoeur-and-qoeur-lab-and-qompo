@@ -1,0 +1,19 @@
+[package]
+name = "qoeurc"
+version = "0.0.0"
+description = "codify human thoughts into actions 🧠"
+authors = ["monsieurbadia <iam@monsieurbadia.com>"]
+edition = "2018"
+
+[lib]
+name = "qoeurc"
+path = "src/lib.rs"
+doctest = false
+
+[dependencies]
+chrono = "0.4.19"
+downcast-rs = "1.2.0"
+Inflector = "0.11.4"
+qute = "0.0.13"
+qutonium = "0.1.6"
+unicode-xid = "0.2.1"

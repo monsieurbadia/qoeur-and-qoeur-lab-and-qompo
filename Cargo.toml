@@ -1,0 +1,21 @@
+[workspace]
+
+members = [
+	"src/bootstrap",
+  "src/qoeurc",
+  "src/tools/qompo",
+  "src/tools/qoeur-lab",
+]
+
+exclude = [
+	"doc/**/*",
+	"examples/**/*",
+	"qoeur_examples/**/*",
+	"target/**/*",
+	"Cargo.lock",
+]
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"

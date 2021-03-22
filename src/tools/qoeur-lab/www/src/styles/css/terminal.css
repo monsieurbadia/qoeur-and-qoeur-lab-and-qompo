@@ -1,0 +1,36 @@
+.code-editor__terminal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 12px;
+}
+
+.inline {
+  display: flex;
+}
+
+.terminal {
+}
+
+.terminal__prompt {
+  margin-right: 10px;
+}
+
+.terminal__input,
+.terminal__input:active,
+.terminal__input:focus {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.terminal__output {
+
+}
+
+.terminal__banner {
+  font-size: 10px;
+}
+
+.terminal-controls {
+  display: flex;
+}

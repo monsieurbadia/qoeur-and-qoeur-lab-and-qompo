@@ -1,0 +1,15 @@
+<script>
+  ƒ sqrt (x: int) -> int {
+    x * x
+  }
+  sqrt(9);
+</script>
+
+<style lang="scss">
+  .to-red {}
+</style>
+
+<div class="to-red">
+  <input type="submit" />
+  <a href="">goto</a>
+</div>

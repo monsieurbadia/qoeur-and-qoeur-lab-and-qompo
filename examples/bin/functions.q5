@@ -1,0 +1,14 @@
+ƒ add (x: int, y: int) -> int { x + y }
+add(1, 2);
+
+ƒ sub (x: int, y: int) -> int { x - y }
+sub(3, 4);
+
+ƒ div (x: int, y: int) -> int { x / y }
+div(3, 4);
+
+ƒ mul (x: int, y: int) -> int { x * y }
+mul(3, 4);
+
+ƒ square (x: int) -> int { x * x }
+square(7);

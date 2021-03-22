@@ -1,0 +1,37 @@
+# ~not-implemented
+ƒ loop_infinite () -> int {
+  loop {}
+}
+
+loop_infinite();
+
+# ~not-implemented
+ƒ loop_for_range () -> int {
+  for 0..3 |x| {
+    print("$x");
+  }
+}
+
+loop_for_range();
+
+# ~not-implemented
+ƒ loop_for_in () -> int {
+  for [1, 2, 3] |x| {
+    print("number: $x");
+  }
+}
+
+loop_for_in();
+
+# ~not-implemented
+ƒ loop_while () -> int {
+  val x : int = 0;
+  while x < 3 {
+    val x = x + 1;
+    if x == 3 {
+      return x;
+    }
+  }
+}
+
+loop_while();

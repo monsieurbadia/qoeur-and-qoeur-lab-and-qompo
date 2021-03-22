@@ -1,0 +1,22 @@
+use capsule script {
+  val name : str = "world";
+}
+
+use capsule ui {
+  $blue: blue;
+  .to-blue {
+    background: $blue;
+  }
+}
+
+use capsule view {
+  <p>hello {name}!</p>
+  <div :click={sqrt}>
+    <input type="text">
+    <button type="submit">Ok</button>
+  </div>
+  <br>
+  <a class="{binding-class}" class="to-blue" href="#">goto</a>
+  <br>
+  <a href="#" style="display:none;">goto</a>
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qoeur lab editor</title>
+    <link preload rel="stylesheet" href="./lib/codemirror/lib/codemirror.css">
+    <link preload rel="stylesheet" href="./src/styles/css/global.css">
+    <link preload rel="stylesheet" href="./src/styles/css/editor.css">
+    <link preload rel="stylesheet" href="./src/styles/css/theme.css">
+    <link preload rel="stylesheet" href="./src/styles/css/terminal.css">
+    <script src="./lib/codemirror/lib/codemirror.js"></script>
+    <script src="./lib/codemirror/addon/mode/simple.js"></script>
+    <script src="./lib/codemirror/mode/javascript/javascript.js"></script>
+    <script src="./lib/codemirror/mode/rust/rust.js"></script>
+  </head>
+  <body>
+    <header class="title-bar">
+      <div class="controls">
+        <button class="exit"></button>
+        <button class="minimize"></button>
+        <button class="fullscreen"></button>
+      </div>
+      <h1 class="title"></h1>
+    </header>
+    <div class="editor">
+      <aside class="sidebar">
+        <nav class="navigation"></nav>
+        <div class="explorer"></div>
+      </aside>
+      <main class="code-editor">
+        <div class="editor-file-navigation"></div>
+        <div class="code-editor__view">
+          <div class="container inline">
+            <div class="column column--left">
+              <textarea
+                name="code-editor-view"
+                class="code code--editor-view"
+                id="code-editor-view">
+              </textarea>
+            </div>
+            <div class="column column--right">
+              <textarea
+                name="code-compiler-view"
+                class="code code--compiler-view"
+                id="code-compiler-view">
+              </textarea>
+              <button id="clipboard-btn" class="btn btn--to-clipboard"></button>
+            </div>
+          </div>
+        </div>
+        <div class="code-editor__terminal">
+          <div class="terminal-controls">
+            <div class="box">
+              <button id="terminal-controls-btn-run-compile" class="btn btn--run-compile" type="button">run</button>
+              <!-- <select name="terminal-controls-optional" id="terminal-controls-optional"></select> -->
+            </div>
+            <div class="box">
+              <select name="terminal-controls-example" class="select select--example" id="terminal-controls-example"></select>
+            </div>
+            <div class="box">
+              <select name="terminal-controls-mode" class="select select--mode" id="terminal-controls-mode"></select>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer-bar"></footer>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>

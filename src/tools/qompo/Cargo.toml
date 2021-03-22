@@ -1,0 +1,48 @@
+[package]
+name = "qompo"
+version = "0.0.0"
+description = "composify accessible apps on the web 👾"
+authors = ["monsieurbadia <iam@monsieurbadia.com>"]
+edition = "2018"
+license = "MIT"
+
+[lib]
+name = "qompo"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+doctest = false
+
+[dependencies]
+qoeurc = { path = "../../qoeurc" }
+cfg-if = "0.1.2"
+js-sys = "0.3.4"
+notify = "4.0.15"
+rsass = "0.16.0"
+wasm-bindgen = "0.2.63"
+#web-view = "0.7.2"
+
+[dependencies.web-sys]
+version="0.3.2"
+features = [
+  'console',
+  'Document',
+  'Text',
+  'Element',
+  'HtmlElement',
+  'HtmlInputElement',
+  'Node',
+  'NodeList',
+  'Window',
+  'EventListener',
+  'EventTarget',
+  'Event',
+  'KeyboardEvent',
+  'MouseEvent',
+  'CssStyleDeclaration',
+  'Performance'
+]
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"

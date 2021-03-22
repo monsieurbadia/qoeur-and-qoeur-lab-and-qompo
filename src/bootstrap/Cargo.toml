@@ -1,0 +1,20 @@
+[package]
+name = "bootstrap"
+version = "0.0.0"
+authors = ["monsieurbadia <iam@monsieurbadia.com>"]
+edition = "2018"
+
+[lib]
+name = "bootstrap"
+path = "lib.rs"
+doctest = false
+
+[[bin]]
+name = "bootstrap"
+path = "bin/main.rs"
+
+[dependencies]
+qoeurc = { path = "../qoeurc" }
+chrono = "0.4.19"
+qute = "0.0.13"
+qutonium = "0.1.2"

@@ -1,0 +1,10 @@
+# ~not-implemented
+|> derive : clone, copy, debug.
+struct Vector2 {
+  x : int
+  y : int
+
+  ƒ new (x : int, y : int) -> Self {
+    Vector2 { x, y }
+  }
+}
